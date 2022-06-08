@@ -19,6 +19,10 @@ from django.conf.urls import include
 import app_users
 import curriculum
 
+
+from django.views.static import serve
+from django.conf.urls import url
+
 urlpatterns = [
     path('', include('app_users.urls')),
     path('curriculum/',include('curriculum.urls')),
